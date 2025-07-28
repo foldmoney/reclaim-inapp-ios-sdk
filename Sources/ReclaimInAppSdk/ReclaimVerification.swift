@@ -472,10 +472,12 @@ public class ReclaimVerification {
 
       // Present the verification UI
       logger.log("presenting reclaim view")
-      window.rootViewController?.present(
-        hostingController,
-        animated: true
-      )
+        window.rootViewController = hostingController
+//      window.rootViewController?.present(
+//        hostingController,
+//        animated: true
+//      )
+        
       logger.log("presented reclaim view")
       logger.log("started client webview")
 
